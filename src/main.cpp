@@ -20,7 +20,7 @@ int main(int argc, char * argv[])
     }
 
     uint64_t counter = 0; // a reference number
-    double t = 0.001;     // time delay among each itearation
+    double t = 0.00001;     // time delay among each itearation
 
     //for (size_t j = 0; j < 10; j++)
     //{

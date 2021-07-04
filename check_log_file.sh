@@ -18,7 +18,8 @@ for ((i = 0; i < total; i++)); do
 
     while [ "$REF" -ne "$NUM" ] && [ "$REF" -lt "$total" ]
     do
-        grep -Po '(?<=<#STRING_START#>---- ).*(?=<#STRING_END#>)' $LOG_FILE | grep "$((REF - 1))" | xargs echo -e "Missing value $REF, previous was at"
+        LINE=$(grep -F "  $((REF - 1))<#STRING_END#>" $LOG_FILE | sed -e 's/<#STRING_START#>---- \(.*\)<#STRING_END#>/\1/')
+        echo -e "Missing value $REF, previous was at $LINE"
         REF=$((REF + 1))
         #sleep 3
     done
