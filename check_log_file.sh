@@ -4,6 +4,7 @@ echo "Parsing log file..."
 
 if [ $# -ne 1 ]; then
     echo "missing argument. Please provide yarplogger file as argument."
+    exit 1
 fi
 
 LOG_FILE=$1
