@@ -1,5 +1,5 @@
 # yInfo-test
-The purpose of this repository is to provide a minimal, reproducible example in order to debug the behavior of YARP yInfo function when it is execute in either yarplogger and console contexts.
+The purpose of this repository is to provide a minimal, reproducible example in order to debug the behavior of YARP yInfo function when it is execute in either yarplogger or console contexts.
 
 ### Prerequisites
 Follow the source installation of the [robotology-superbuild](https://github.com/robotology/robotology-superbuild/tree/v2021.05).
